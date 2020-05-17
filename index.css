@@ -1,0 +1,77 @@
+body,html{
+    margin: 0;
+    padding: 0;
+   
+    overflow-y: auto; 
+    overflow-x: hidden; 
+    
+}
+
+
+
+nav{
+    padding:1rem 1rem ;
+
+}
+.hero{
+  background-image: url(hero-2.jpg);
+ 
+
+}
+.control.is-hidden-touch{
+    width: 75%;
+}
+
+.control.is-hidden-desktop{
+    width: 60%;
+}
+
+.column.is-hidden-touch.is-right img{
+    margin-left: 10vh;
+    padding-bottom: 10vh;
+}
+
+.column.is-hidden-desktop.is-right img{
+    margin-top: 0vh !important;
+}
+
+.button.is-medium.is-primary{
+    /* background-color:#120851 ; */
+    background-color: #FF395D;
+    
+}
+
+.button.is-medium.is-primary:hover{
+    /* background-color:#120851 ; */
+    background-color: white;
+    color: #FF395D;
+    font-weight: bold;
+    
+}
+
+
+
+.text-after-signup-hide{
+    display: none !important;
+}
+
+.text-after-signup-show{
+    display: block !important;
+    transition: transform 80ms ease-in;
+    transform: scale(0.95);
+}
+
+#form{
+    transition: all 0.6s ease-in-out;
+}
+
+.animate__pulse{
+    animation-iteration-count: infinite;
+     animation-duration: 2s !important;
+    
+}
+
+#logo{
+    width: 18vh !important;
+    max-height: 3000px !important;
+}
