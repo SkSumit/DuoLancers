@@ -40,3 +40,11 @@ form.addEventListener("submit", function (e) {
   text3.classList.add("text-after-signup-show");
   text4.classList.add("text-after-signup-show");
 });
+
+
+var formpg = document.querySelector('.pageclip-form')
+Pageclip.form(formpg, {
+  onSubmit: function (event) { },
+  onResponse: function (error, response) { },
+//   successTemplate: '<span>Thank you!</span>'
+})
