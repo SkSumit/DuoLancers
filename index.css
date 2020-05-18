@@ -1,77 +1,108 @@
-body,html{
-    margin: 0;
-    padding: 0;
-   
-    overflow-y: auto; 
-    overflow-x: hidden; 
-    
+body,
+html {
+  margin: 0;
+  padding: 0;
+
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-
-
-nav{
-    padding:1rem 1rem ;
-
+nav {
+  padding: 1rem 1rem;
 }
-.hero{
+.hero {
   background-image: url(hero-2.jpg);
- 
-
 }
-.control.is-hidden-touch{
-    width: 75%;
+.control.is-hidden-touch {
+  width: 75%;
 }
 
-.control.is-hidden-desktop{
-    width: 60%;
+.control.is-vcentered.has-icons-left {
+  width: 80%;
 }
 
-.column.is-hidden-touch.is-right img{
-    margin-left: 10vh;
-    padding-bottom: 10vh;
+@media only screen and (max-width: 768px) {
+  .control.is-vcentered.has-icons-left {
+    width: 100%;
+  }
 }
 
-.column.is-hidden-desktop.is-right img{
-    margin-top: 0vh !important;
+.column.is-hidden-desktop.is-right img {
+  margin-top: 0vh !important;
 }
 
-.button.is-medium.is-primary{
-    /* background-color:#120851 ; */
-    background-color: #FF395D;
-    
+.button.is-medium.is-primary {
+  /* background-color:#120851 ; */
+  background-color: #ff395d;
 }
 
-.button.is-medium.is-primary:hover{
-    /* background-color:#120851 ; */
-    background-color: white;
-    color: #FF395D;
-    font-weight: bold;
-    
+.button.is-medium.is-primary:hover {
+  /* background-color:#120851 ; */
+  background-color: white;
+  color: #ff395d;
+  font-weight: bold;
 }
 
-
-
-.text-after-signup-hide{
-    display: none !important;
+.text-after-signup-hide {
+  display: none !important;
 }
 
-.text-after-signup-show{
-    display: block !important;
-    transition: transform 80ms ease-in;
-    transform: scale(0.95);
+.text-after-signup-show {
+  display: block !important;
+  transition: transform 80ms ease-in;
+  transform: scale(0.95);
 }
 
-#form{
-    transition: all 0.6s ease-in-out;
+#form {
+  transition: all 0.6s ease-in-out;
 }
 
-.animate__pulse{
-    animation-iteration-count: infinite;
-     animation-duration: 2s !important;
-    
+.animate__pulse {
+  animation-iteration-count: infinite;
+  animation-duration: 2s !important;
 }
 
-#logo{
-    width: 18vh !important;
-    max-height: 3000px !important;
+#logo {
+  width: 18vh !important;
+  max-height: 3000px !important;
+}
+
+@-webkit-keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+@keyframes ping {
+  0% {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    opacity: 0.8;
+  }
+  80% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(2.2);
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.ping {
+  -webkit-animation: ping 0.8s ease-in-out both;
+  animation: ping 0.8s ease-in-out both;
 }
